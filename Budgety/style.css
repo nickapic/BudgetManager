@@ -15,16 +15,18 @@
 }
 
 body {
+    
     color: #555;
-    font-family: Open Sans;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     position: relative;
     height: 100vh;
     font-weight: 400;
+  
 }
 
 .right { float: right; }
-.red { color: #FF5049 !important; }
+.red { color: #ffffff !important; }
 .red-focus:focus { border: 1px solid #FF5049 !important; }
 
 /**********************************************
@@ -32,33 +34,59 @@ body {
 **********************************************/
 
 .top {
-    height: 40vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(back.png);
-    background-size: cover;
-    background-position: center;
+    height: 100vh;
+    width: 40vw;
+    background-color: #D81B48;
     position: relative;
+}
+
+.title {
+    position: absolute;
+    width: 350px;
+    top: 10%;
+    left: 31%;
+    transform: translate(-50%, -40%);
+    color: #fff;
+}
+.nav{
+    position: relative;
+   
+}
+.nav-options{
+    position: absolute;
+    right:5vw;
+    top: 9vh;
+}
+.nav-options-text{
+    text-decoration: none;
+    color: #444;
+}
+.budget__logo {
+    font-size: 26px;
+    text-align: left;
+    font-weight: 700;
 }
 
 .budget {
     position: absolute;
-    width: 350px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 400px;
+    top: 40%;
+    left: 35%;
+    transform: translate(-50%, -40%);
     color: #fff;
 }
 
 .budget__title {
-    font-size: 18px;
-    text-align: center;
+    font-size: 22.5px;
+    text-align: left;
     margin-bottom: 10px;
     font-weight: 300;
 }
 
 .budget__value {
-    font-weight: 300;
+    font-weight: 700;
     font-size: 46px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 25px;
     letter-spacing: 2px;
 }
@@ -67,15 +95,16 @@ body {
 .budget__expenses {
     padding: 12px;
     text-transform: uppercase;
+    border-radius: 5px;
 }
 
 .budget__income {
     margin-bottom: 10px;
-    background-color: #28B9B5;
+    background-color: #ffffff;
 }
 
 .budget__expenses {
-    background-color: #FF5049;
+    background-color: #ffffff;
 }
 
 .budget__income--text,
@@ -89,6 +118,7 @@ body {
 .budget__income--value,
 .budget__expenses--value {
     letter-spacing: 1px;
+    color: #444;
     float: left;
 }
 
@@ -114,22 +144,20 @@ body {
 
 /***** FORM *****/
 .add {
-    padding: 14px;
-    border-bottom: 1px solid #e7e7e7;
-    background-color: #f7f7f7;
+    position: relative;
+    top:4rem;
 }
 
 .add__container {
-    margin: 0 auto;
-    text-align: center;
+text-align: left;
 }
 
 .add__type {
     width: 55px;
     border: 1px solid #e7e7e7;
-    height: 44px;
+    height: 46px;
     font-size: 18px;
-    color: inherit;
+    color: #444;
     background-color: #fff;
     margin-right: 10px;
     font-weight: 300;
@@ -138,9 +166,10 @@ body {
 
 .add__description,
 .add__value {
+    margin-top: 1rem;
     border: 1px solid #e7e7e7;
     background-color: #fff;
-    color: inherit;
+    color: #444;
     font-family: inherit;
     font-size: 14px;
     padding: 12px 15px;
@@ -156,7 +185,7 @@ body {
     font-size: 35px;
     background: none;
     border: none;
-    color: #28B9B5;
+    color: #ffffff;
     cursor: pointer;
     display: inline-block;
     vertical-align: middle;
@@ -176,20 +205,26 @@ body {
 .add__btn:focus { outline: none; }
 
 /***** LISTS *****/
+.side{
+    position: relative;
+    
+}
 .container {
-    width: 1000px;
-    margin: 60px auto;
+    position: absolute;
+    width: 650px;
+    left:50vw;
+    top: 14rem;
 }
 
 .income {
     float: left;
-    width: 475px;
+    width: 300px;
     margin-right: 50px;
 }
 
 .expenses {
     float: left;
-    width: 475px;
+    width: 300px;
 }
 
 h2 {
