@@ -211,20 +211,20 @@ text-align: left;
 }
 .container {
     position: absolute;
-    width: 650px;
+    width: 750px;
     left:50vw;
     top: 14rem;
 }
 
 .income {
     float: left;
-    width: 300px;
+    width: 350px;
     margin-right: 50px;
 }
 
 .expenses {
     float: left;
-    width: 300px;
+    width: 350px;
 }
 
 h2 {
